@@ -16,10 +16,10 @@ def readfile(cl='CustomerList.txt'):
             return cc
 
 
-def append_customer(new_customer, filename='CustomerList.txt'):
-    if filename:
+def append_customer(new_customer, cc='CustomerList.txt'):
+    if cc:
         try:
-            fp = open(filename, 'a')
+            fp = open(cc, 'a')
         except IOError:
             print "Error opening file"
         else:
@@ -27,7 +27,7 @@ def append_customer(new_customer, filename='CustomerList.txt'):
             line += '\n'
             fp.write(line)
             fp.close()
-            return readfile(filename)
+            return readfile(cc)
 
 
 def match_customer(input_id, cc):
