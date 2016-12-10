@@ -52,11 +52,11 @@ def print_customer_detail(customer):
 
 
 def get_input(prompt):
-    ipt = ''
-    while not ipt:
-        ipt = raw_input(prompt)
+    th = ''
+    while not th:
+        th = raw_input(prompt)
 
-    return ipt.title()
+    return th.title()
 
 
 def get_number(prompt):
